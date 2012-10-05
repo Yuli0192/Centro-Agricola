@@ -1,0 +1,1032 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB262B3D-0B38-41E5-8570-2AB01F49BE96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>InterfazGrafica.My.MyApplication</StartupObject>
+    <RootNamespace>InterfazGrafica</RootNamespace>
+    <AssemblyName>InterfazGrafica</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>iconoCentroAgricola.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>758043A04AAAAF12B8840B7BF45BE87068C04A7F</ManifestCertificateThumbprint>
+    <ManifestKeyFile>InterfazGrafica_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\YULI\Desktop\prueba\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>InterfazGrafica.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>InterfazGrafica.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsCastCadena\ClsCastCadenaAuxiliar.vb" />
+    <Compile Include="ClsCastCadena\ClsCastCadenaCliente.vb" />
+    <Compile Include="ClsCastCadena\ClsCastCadenaFeria.vb" />
+    <Compile Include="ClsCastCadena\ClsCastCadenaFinca.vb" />
+    <Compile Include="ClsCastCadena\ClsCastCadenaInspeccion.vb" />
+    <Compile Include="ClsCastCadena\ClsCastCadenaOrden.vb" />
+    <Compile Include="ClsCastCadena\ClsCastCadenaPermiso.vb" />
+    <Compile Include="ClsCastCadena\ClsCastCadenaProducto.vb" />
+    <Compile Include="ClsCastCadena\ClsCastCadenaSocio.vb" />
+    <Compile Include="Mantenimiento\ctlAsignarFincaSocio.Designer.vb">
+      <DependentUpon>ctlAsignarFincaSocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlAsignarFincaSocio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlAsignarPermisoAux.Designer.vb">
+      <DependentUpon>ctlAsignarPermisoAux.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlAsignarPermisoAux.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarAuxiliar.Designer.vb">
+      <DependentUpon>ctlBuscarAuxiliar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarAuxiliar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarAuxiliarInactivo.Designer.vb">
+      <DependentUpon>ctlBuscarAuxiliarInactivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarAuxiliarInactivo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarAuxProducto.Designer.vb">
+      <DependentUpon>ctlBuscarAuxProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarAuxProducto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarClienteActivo.Designer.vb">
+      <DependentUpon>ctlBuscarClienteActivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarClienteActivo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarClienteInactivo.Designer.vb">
+      <DependentUpon>ctlBuscarClienteInactivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarClienteInactivo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarFinca.Designer.vb">
+      <DependentUpon>ctlBuscarFinca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarFinca.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarInspeccion.Designer.vb">
+      <DependentUpon>ctlBuscarInspeccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarInspeccion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarOrdenCancelada.Designer.vb">
+      <DependentUpon>ctlBuscarOrdenCancelada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarOrdenCancelada.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarPermisoAuxPendiente.Designer.vb">
+      <DependentUpon>ctlBuscarPermisoAuxPendiente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarPermisoAuxPendiente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarPermisoSocioPendiente.Designer.vb">
+      <DependentUpon>ctlBuscarPermisoSocioPendiente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarPermisoSocioPendiente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarSocio.Designer.vb">
+      <DependentUpon>ctlBuscarSocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarSocio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarSocioInactivo.Designer.vb">
+      <DependentUpon>ctlBuscarSocioInactivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarSocioInactivo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarSocioProducto.Designer.vb">
+      <DependentUpon>ctlBuscarSocioProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlBuscarSocioProducto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlCancelarOrden.Designer.vb">
+      <DependentUpon>ctlCancelarOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlCancelarOrden.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlCarnetVencido.Designer.vb">
+      <DependentUpon>ctlCarnetVencido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlCarnetVencido.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlFactura.Designer.vb">
+      <DependentUpon>ctlFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlFactura.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarPermisoAux.Designer.vb">
+      <DependentUpon>ctlRegistrarPermisoAux.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarPermisoAux.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\popupReciboInsp.Designer.vb">
+      <DependentUpon>popupReciboInsp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\popupReciboInsp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\popupReciboOrden.Designer.vb">
+      <DependentUpon>popupReciboOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\popupReciboOrden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\PopupRegistrarFeriaAux.Designer.vb">
+      <DependentUpon>PopupRegistrarFeriaAux.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\PopupRegistrarFeriaAux.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ClientesExcluidos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientesExcluidos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ClientesExcluidosPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientesExcluidosPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlInspeccionMes.Designer.vb">
+      <DependentUpon>ctlInspeccionMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlInspeccionMes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlInspeccionSemanal.Designer.vb">
+      <DependentUpon>ctlInspeccionSemanal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlInspeccionSemanal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoAuxProducto.Designer.vb">
+      <DependentUpon>ctlListadoAuxProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoAuxProducto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoOrdenesCanceladas.Designer.vb">
+      <DependentUpon>ctlListadoOrdenesCanceladas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoOrdenesCanceladas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoOrdenesPendientes.Designer.vb">
+      <DependentUpon>ctlListadoOrdenesPendientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoOrdenesPendientes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoReciboOrden.Designer.vb">
+      <DependentUpon>ctlListadoReciboOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoReciboOrden.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoSocio.Designer.vb">
+      <DependentUpon>ctlListadoSocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoSocio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoSocioProducto.Designer.vb">
+      <DependentUpon>ctlListadoSocioProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlListadoSocioProducto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlListarInscripcion.Designer.vb">
+      <DependentUpon>ctlListarInscripcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlListarInscripcion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlListarReciboDiario.Designer.vb">
+      <DependentUpon>ctlListarReciboDiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlListarReciboDiario.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlOrdenPendiente.Designer.vb">
+      <DependentUpon>ctlOrdenPendiente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlOrdenPendiente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlPermisoVencido.Designer.vb">
+      <DependentUpon>ctlPermisoVencido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlPermisoVencido.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarAuxiliar.Designer.vb">
+      <DependentUpon>ctlRegistrarAuxiliar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarAuxiliar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarCliente.Designer.vb">
+      <DependentUpon>ctlRegistrarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarFeria.Designer.vb">
+      <DependentUpon>ctlRegistrarFeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarFeria.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarFinca.Designer.vb">
+      <DependentUpon>ctlRegistrarFinca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarFinca.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarInspeccion.Designer.vb">
+      <DependentUpon>ctlRegistrarInspeccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarInspeccion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarOrden.Designer.vb">
+      <DependentUpon>ctlRegistrarOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarOrden.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarPermiso.Designer.vb">
+      <DependentUpon>ctlRegistrarPermiso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarPermiso.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarProducto.Designer.vb">
+      <DependentUpon>ctlRegistrarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarProducto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarSocio.Designer.vb">
+      <DependentUpon>ctlRegistrarSocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarSocio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarUsuario.Designer.vb">
+      <DependentUpon>ctlRegistrarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctlRegistrarUsuario.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\PopupRegistrarFeria.Designer.vb">
+      <DependentUpon>PopupRegistrarFeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\PopupRegistrarFeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\ctlPrincipal.Designer.vb">
+      <DependentUpon>ctlPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\ctlPrincipal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Principal\frmCentroAgricola.Designer.vb">
+      <DependentUpon>frmCentroAgricola.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\frmCentroAgricola.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Principal\frmIniciarSesion.Designer.vb">
+      <DependentUpon>frmIniciarSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\frmIniciarSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\UsuarioActual.vb" />
+    <Compile Include="Reportes\ctlPermisoSemanal.Designer.vb">
+      <DependentUpon>ctlPermisoSemanal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlPermisoSemanal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlPersonasExcluidas.Designer.vb">
+      <DependentUpon>ctlPersonasExcluidas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlPersonasExcluidas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\Inspeccion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inspeccion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\InspeccionMes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InspeccionMes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\InspeccionPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InspeccionPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\InspeccionSemanal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InspeccionSemanal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\InspeccionSemanalPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InspeccionSemanalPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadoReciboDiario.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoReciboDiario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadoReciboDiarioPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoReciboDiarioPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadoReciboOrden.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoReciboOrden.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadoReciboOrdenPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoReciboOrdenPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadoRecibosInscripcion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoRecibosInscripcion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListarSocio.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListarSocio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\OrdenesCanceladas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenesCanceladas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\OrdenesCanceladasPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenesCanceladasPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\OrdenesMes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenesMes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\OrdenesMesPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenesMesPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\OrdenesMesPrueba.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenesMesPrueba.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\OrdenesPendientes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenesPendientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\OrdenesPendientesPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenesPendientesPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\OrdenMes.Designer.vb">
+      <DependentUpon>OrdenMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\OrdenMes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\PermisoAux.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PermisoAux.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\PermisoAuxPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PermisoAuxPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\PermisoSemanal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PermisoSemanal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\PermisoSemanalPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PermisoSemanalPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\PermisoSocio.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PermisoSocio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\PermisoSocioPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PermisoSocioPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\PermisoSocioPrueba.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PermisoSocioPrueba.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ProductoAux.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductoAux.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ProductoSocio.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductoSocio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Recibo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recibo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReciboOrden.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReciboOrden.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReciboOrdenPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReciboOrdenPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReciboPrue.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReciboPrue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mantenimiento\ctlAsignarFincaSocio.resx">
+      <DependentUpon>ctlAsignarFincaSocio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlAsignarPermisoAux.resx">
+      <DependentUpon>ctlAsignarPermisoAux.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarAuxiliar.resx">
+      <DependentUpon>ctlBuscarAuxiliar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarAuxiliarInactivo.resx">
+      <DependentUpon>ctlBuscarAuxiliarInactivo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarAuxProducto.resx">
+      <DependentUpon>ctlBuscarAuxProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarClienteActivo.resx">
+      <DependentUpon>ctlBuscarClienteActivo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarClienteInactivo.resx">
+      <DependentUpon>ctlBuscarClienteInactivo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarFinca.resx">
+      <DependentUpon>ctlBuscarFinca.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarInspeccion.resx">
+      <DependentUpon>ctlBuscarInspeccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarOrdenCancelada.resx">
+      <DependentUpon>ctlBuscarOrdenCancelada.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarPermisoAuxPendiente.resx">
+      <DependentUpon>ctlBuscarPermisoAuxPendiente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarPermisoSocioPendiente.resx">
+      <DependentUpon>ctlBuscarPermisoSocioPendiente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarSocio.resx">
+      <DependentUpon>ctlBuscarSocio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarSocioInactivo.resx">
+      <DependentUpon>ctlBuscarSocioInactivo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlBuscarSocioProducto.resx">
+      <DependentUpon>ctlBuscarSocioProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlCancelarOrden.resx">
+      <DependentUpon>ctlCancelarOrden.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlCarnetVencido.resx">
+      <DependentUpon>ctlCarnetVencido.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlFactura.resx">
+      <DependentUpon>ctlFactura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarPermisoAux.resx">
+      <DependentUpon>ctlRegistrarPermisoAux.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\popupReciboInsp.resx">
+      <DependentUpon>popupReciboInsp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\popupReciboOrden.resx">
+      <DependentUpon>popupReciboOrden.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\PopupRegistrarFeriaAux.resx">
+      <DependentUpon>PopupRegistrarFeriaAux.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ClientesExcluidos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClientesExcluidos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ClientesExcluidosPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClientesExcluidosPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlInspeccionMes.resx">
+      <DependentUpon>ctlInspeccionMes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlInspeccionSemanal.resx">
+      <DependentUpon>ctlInspeccionSemanal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlListadoAuxProducto.resx">
+      <DependentUpon>ctlListadoAuxProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlListadoOrdenesCanceladas.resx">
+      <DependentUpon>ctlListadoOrdenesCanceladas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlListadoOrdenesPendientes.resx">
+      <DependentUpon>ctlListadoOrdenesPendientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlListadoReciboOrden.resx">
+      <DependentUpon>ctlListadoReciboOrden.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlListadoSocio.resx">
+      <DependentUpon>ctlListadoSocio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlListadoSocioProducto.resx">
+      <DependentUpon>ctlListadoSocioProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlListarInscripcion.resx">
+      <DependentUpon>ctlListarInscripcion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlListarReciboDiario.resx">
+      <DependentUpon>ctlListarReciboDiario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlOrdenPendiente.resx">
+      <DependentUpon>ctlOrdenPendiente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlPermisoVencido.resx">
+      <DependentUpon>ctlPermisoVencido.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarAuxiliar.resx">
+      <DependentUpon>ctlRegistrarAuxiliar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarCliente.resx">
+      <DependentUpon>ctlRegistrarCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarFeria.resx">
+      <DependentUpon>ctlRegistrarFeria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarFinca.resx">
+      <DependentUpon>ctlRegistrarFinca.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarInspeccion.resx">
+      <DependentUpon>ctlRegistrarInspeccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarOrden.resx">
+      <DependentUpon>ctlRegistrarOrden.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarPermiso.resx">
+      <DependentUpon>ctlRegistrarPermiso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarProducto.resx">
+      <DependentUpon>ctlRegistrarProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarSocio.resx">
+      <DependentUpon>ctlRegistrarSocio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\ctlRegistrarUsuario.resx">
+      <DependentUpon>ctlRegistrarUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\PopupRegistrarFeria.resx">
+      <DependentUpon>PopupRegistrarFeria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\ctlPrincipal.resx">
+      <DependentUpon>ctlPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmCentroAgricola.resx">
+      <DependentUpon>frmCentroAgricola.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmIniciarSesion.resx">
+      <DependentUpon>frmIniciarSesion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlPermisoSemanal.resx">
+      <DependentUpon>ctlPermisoSemanal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlPersonasExcluidas.resx">
+      <DependentUpon>ctlPersonasExcluidas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Inspeccion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Inspeccion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\InspeccionMes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InspeccionMes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\InspeccionPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InspeccionPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\InspeccionSemanal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InspeccionSemanal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\InspeccionSemanalPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InspeccionSemanalPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadoReciboDiario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoReciboDiario.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadoReciboDiarioPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoReciboDiarioPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadoReciboOrden.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoReciboOrden.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadoReciboOrdenPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoReciboOrdenPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadoRecibosInscripcion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoRecibosInscripcion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListarSocio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListarSocio.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\OrdenesCanceladas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrdenesCanceladas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\OrdenesCanceladasPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrdenesCanceladasPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\OrdenesMes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrdenesMes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\OrdenesMesPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrdenesMesPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\OrdenesMesPrueba.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrdenesMesPrueba.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\OrdenesPendientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrdenesPendientes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\OrdenesPendientesPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrdenesPendientesPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\OrdenMes.resx">
+      <DependentUpon>OrdenMes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PermisoAux.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PermisoAux.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PermisoAuxPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PermisoAuxPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PermisoSemanal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PermisoSemanal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PermisoSemanalPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PermisoSemanalPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PermisoSocio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PermisoSocio.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PermisoSocioPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PermisoSocioPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PermisoSocioPrueba.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PermisoSocioPrueba.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ProductoAux.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductoAux.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ProductoSocio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductoSocio.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Recibo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Recibo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReciboOrden.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReciboOrden.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReciboOrdenPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReciboOrdenPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReciboPrue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReciboPrue.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InterfazGrafica_TemporaryKey.pfx" />
+    <None Include="Resources\LOGO CENTRO AGRICOLA CANTONAL DE PARAISO 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconoCentroAgricola.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogicaNegocio\LogicaNegocio.vbproj">
+      <Project>{64DC34E3-B4A0-4A2A-B601-50C9B4C515AE}</Project>
+      <Name>LogicaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
